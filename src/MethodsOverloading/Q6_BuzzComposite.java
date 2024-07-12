@@ -5,52 +5,39 @@ import java.util.Scanner;
 public class Q6_BuzzComposite {
 
     // Buzz number
-    public int fnNum(int a) {
-        if ((a % 7 == 0) || (a%10 == 7)) {
-            return 1;
+    public void fnNum (double  n) {
+        if ((n % 7 == 0) || (n%10 == 7)) {
+            System.out.println( "Buzz  number");
         } else {
-            return 0;
+            System.out.println("Not buzz");
         }
     }
 
     // composite number
-    public int composite (int a)
+    // THe number that is exept prime number
+
+    public void fnNum (int n)
     {
         int sum=0;
-        for(int i=2;i<a;i++)
+        for(int i=1;i<=n;i++)
         {
-            if(a%i==0){
-                sum=sum+i;
+            if(n%i==0){
+                sum++;
             }
         }
-        if(sum>=2)
-        {
-            return 0;
-        }
-        else {
-            return 1;
-        }
+        if(sum>2)
+            System.out.println(" composite" );
+        else
+            System.out.println("not");
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        System.out.println("Enter a buzz number");
         Q6_BuzzComposite obj=new Q6_BuzzComposite();
-        int n= sc.nextInt();
-        int k=obj.fnNum(n);
-        if(k==1) {
-            System.out.println("It is a buzz number");
-        }
-        else {
-            System.out.println("t is not a buzz number");
-        }
-
-        System.out.println("Enter for composite number");
-        int n1=sc.nextInt();
-        int j=obj.composite(n1);
-        if(j==1)
-            System.out.println("Composite no");
-        else
-            System.out.println("Not composite");
-
+        System.out.println("Enter a buzz number");
+        Double a=sc.nextDouble();
+        obj.fnNum(a);
+        System.out.println("Enter for composite ");
+        int b= sc.nextInt();
+        obj.fnNum(b);
     }
 }

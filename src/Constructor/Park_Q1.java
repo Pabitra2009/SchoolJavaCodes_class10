@@ -1,9 +1,9 @@
 package Constructor;
 import java.util.Scanner;
-public class Park_Q2 {
+public class Park_Q1 {
     double EntryFee ,discount,amount;
     int age;
-    public Park_Q2(){     // Constructor..
+    public Park_Q1(){     // Constructor..
         EntryFee=0.0;
         discount=0.0;
         amount=0.0;
@@ -34,7 +34,7 @@ public class Park_Q2 {
     }
 
     public static void main(String[] args) {
-        Park_Q2 obj =new Park_Q2();
+        Park_Q1 obj =new Park_Q1();
         obj.input();
         obj.calculate();
         obj.display();

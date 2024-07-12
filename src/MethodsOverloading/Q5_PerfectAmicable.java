@@ -21,6 +21,7 @@ public class Q5_PerfectAmicable {
             return 0;
         }
     }
+
     // Amicable number
 
     public int number(int a,int b)
@@ -30,14 +31,14 @@ public class Q5_PerfectAmicable {
         {
             if(a%i==0)
             {
-                sum1=sum+i;
+                sum1=sum1+i;
             }
         }
         for(int i=1;i<b;i++)
         {
             if(b%i==0)
             {
-                sum2=sum+i;
+                sum2=sum2+i;
             }
         }
         if((sum1==b)&&(sum2==a))
